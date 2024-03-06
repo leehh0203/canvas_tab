@@ -1,0 +1,24 @@
+/* common소스 */
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+section .icon svg{
+  width: 72px;
+  height: 72px;
+}
+.sc-scroll {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.sc-scroll h2,
+.sc-scroll h3{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.sc-scroll strong {
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 400;
+}

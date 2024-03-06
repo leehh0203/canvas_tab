@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tab & canvas</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="./main.js" defer></script>
+
+
+</head>
+<body>
+  <div class="wrapper">
+    <section class="sc-colorsparactice" id="scroll-section-0">
+      <div class="inner">
+        <header class="group-top">
+          <div class="col-left">
+            <h2>COLORS</h2>
+            <strong>Fresh colors, <br>foldable form</strong>
+          </div>
+          <div class="col-right">
+            <p>
+              With eight shades to choose from, Galaxy Z Flip5 makes a statement and shows off your unique style.5 Add an extra pop of personality to your device with exclusive colors you can only find on samsung.com.
+            </p>
+            <!-- 탭버튼 부분 -->
+            <ul class="tab-btn" data-colorChips="mint">
+              <li><button class="mint" aria-selected="true"  data-color="mint"><i class="dot"></i><span>Mint</span></button></li>
+              <li><button class="graphite" aria-selected="false"  data-color="graphite"><i class="dot"></i><span>Graphite</span></button></li>
+              <li><button class="cream" aria-selected="false" data-color="cream"><i class="dot"></i><span>Cream</span></button></li>
+              <li><button class="lavender" aria-selected="false" data-color="lavender"><i class="dot"></i><span>Lavender</span></button></li>
+              <li><button class="gray" aria-selected="false" data-color="gray"><i class="dot"></i><span>Gray</span></button></li>
+              <li><button class="blue" aria-selected="false" data-color="blue"><i class="dot"></i><span>Blue</span></button></li>
+              <li><button class="green" aria-selected="false" data-color="green"><i class="dot"></i><span>Green</span></button></li>
+              <li><button class="yellow" aria-selected="false" data-color="yellow"><i class="dot"></i><span>Yellow</span></button></li>
+            </ul>
+          </div>
+        </header>
+        <!-- 탭 컨텐츠 -->
+        <div class="group-bottom">
+          <div class="tab-cont show">
+            <button class="tab-img left top on"><picture><img src="./images/tab_img/galaxy-z-flip5-highlights-colors-mint-01.jpg" alt="mint1"></picture></button>
+            <button class="tab-img right top"><picture><img src="./images/tab_img/galaxy-z-flip5-highlights-colors-mint-02.jpg" alt="mint2"></picture></button>
+            <button class="tab-img bottom right"><picture><img src="./images/tab_img/galaxy-z-flip5-highlights-colors-mint-03.jpg" alt="mint3"></picture></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="scroll-section_01 sc-scroll" id="scroll-section-1">
+      <div class="inner">
+          <header>
+            <div class="col-left">
+              <h2>FLEX MODE CAMERA</h2>
+              <strong>A whole new way to <br>capture</strong>
+            </div>
+            <p>Take photos and videos from angles that most smartphones can't — without extra equipment.2,6 Flex mode couples with Auto framing to make your vlogs hands-free while staying in focus.</p>
+          </header>
+          <div class="group-bottom">
+            <canvas id="video-canvas-0" width="1000" height="800"></canvas>
+          </div>
+      </div>
+    </section>
+
+    <section class="scroll-section_02 sc-scroll" id="scroll-section-2">
+      <div class="multitasking-sticky" >
+        <div class="inner first">
+          <div class="group-text" id="step2_text">
+            <div class="col-left">
+                <h2>APP CONTINUITY</h2>
+                <strong>The seamlessness of unfolding</strong>
+                <p>Open an app on the Cover Screen, then unfold to see it on the bigger screen with an optimized UI. The two displays work seamlessly to maintain app continuity.</p>
+            </div>
+            <div class="col-right">
+                <span class="icon">
+                    <svg focusable="false" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"><g fill="#000"><path d="m82.3 90.5-33.5-7.7-35 7.7h-.3a6.15 6.15 0 0 1 -6-6.3v-72.5a6.12 6.12 0 0 1 6-6.2h.3l34.7 7.7 33.7-7.7h.3a6.15 6.15 0 0 1 6 6.3v72.5a6.12 6.12 0 0 1 -6 6.2zm-68.8-80a1.17 1.17 0 0 0 -.9 1.1v72.6a1.2 1.2 0 0 0 .9 1.2l35.4-7.8 33.9 7.8a1.17 1.17 0 0 0 .9-1.1v-72.6a1.2 1.2 0 0 0 -.9-1.2l-34.1 7.8z"></path><path d="m75.3 79.5h-.3l-26.3-5.8-27.8 5.8a4.27 4.27 0 0 1 -4.3-4.3v-54.4a4.27 4.27 0 0 1 4.3-4.3h.3l27.3 5.8 26.8-5.8a4.27 4.27 0 0 1 4.3 4.3v54.4a4.27 4.27 0 0 1 -4.3 4.3zm-54.5-60a1.3 1.3 0 0 0 -1.2 1.3v54.4a1.3 1.3 0 0 0 1.2 1.3l27.9-5.9 26.8 5.9a1.3 1.3 0 0 0 1.2-1.3v-54.4a1.3 1.3 0 0 0 -1.2-1.3l-27 5.9z"></path></g></svg>
+                </span>
+                <strong>Optimized apps</strong>
+                <p class="top-text">a larger view unfolds</p>
+                <p class="bottom-text">Apps are optimized for the Main Screen, so you can simply unfold and the UI adjusts seamlessly. Plus, you can choose the view so even more content fits in one screen.</p>
+            </div>
+          </div>
+          <div class="group-img" >
+            <canvas id="video-canvas-1" width="880" height="1220"></canvas>
+          </div>
+        </div>
+        <div class="inner second" id="step3">
+          <div class="group-text" id="step3_text" >
+            <div class="col-left">
+              <h3>MULTITASKING</h3>
+              <strong>Keeps up so you can keep ahead</strong>
+            </div>
+            <div class="col-right">
+              <p class="top-text">With the upgraded multi-window layout and App Continuity, you can multitask with two apps on the Cover Screen, move it to the Main Screen, open a third app with Split Screen and then simply tap to work or play where you need to.</p>
+              <p class="bottom-text">*Image simulated for illustration purposes. Actual UI may be different.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="function-icon">
+        <div class="inner">
+          <div class="col-left">
+            <span class="icon">
+              <svg focusable="false" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"><g fill="#000"><path d="m83.64 11.49h-14.34v-.34a5.67 5.67 0 0 0 -5.67-5.67h-31.18a5.67 5.67 0 0 0 -5.67 5.67v.34h-14.42a5.67 5.67 0 0 0 -5.67 5.67v62.25a5.67 5.67 0 0 0 5.67 5.67h14.43a5.66 5.66 0 0 0 5.66 5.44h31.18a5.67 5.67 0 0 0 5.66-5.44h14.35a5.67 5.67 0 0 0 5.67-5.67v-62.25a5.67 5.67 0 0 0 -5.67-5.67zm-56.86 62.19h-10.11v-51.78h10.11zm0-54.78h-13.11v57.78h13.11v3.4h-14.42a.67.67 0 0 1 -.67-.67v-62.25a.67.67 0 0 1 .67-.67h14.42zm37.52 65.95a.67.67 0 0 1 -.67.67h-31.18a.67.67 0 0 1 -.67-.67v-73.7a.67.67 0 0 1 .67-.67h31.18a.67.67 0 0 1 .67.67zm5-62.95h10v51.78h-10zm15 57.51a.67.67 0 0 1 -.67.67h-14.33v-3.4h13v-57.78h-13v-2.41h14.34a.67.67 0 0 1 .67.67z"></path><path d="m33.86 83.43h28.35v-70.86h-28.35zm3-67.86h22.35v64.86h-22.35z"></path></g></svg>
+            </span>
+            <strong>App Pair</strong>
+            <p class="top-text">launch multiple apps at once</p>
+            <p class="bottom-text">Now you can launch up to 3 apps simultaneously — and if you save the layout, it’ll open that same way every time.</p>
+          </div>
+          <div class="con-right">
+            <span class="icon">
+              <svg focusable="false" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"><g fill="#000"><path d="m53.14 84.63h-42v-42h36v-5h-37a4 4 0 0 0 -4 4v44a4 4 0 0 0 4 4h44a4 4 0 0 0 4-4v-37h-5z"></path><path d="m84.14 29.13h5v5h-5z"></path><path d="m84.14 38.13h5v5h-5z"></path><path d="m84.14 20.13h5v5h-5z"></path><path d="m39.14 29.13h5v5h-5z"></path><path d="m39.14 20.13h5v5h-5z"></path><path d="m85.14 6.63h-5v5h4v4h5v-5a4 4 0 0 0 -4-4z"></path><path d="m44.14 11.63h4v-5h-5a4 4 0 0 0 -4 4v5h5z"></path><path d="m84.14 51.63h-4v5h5a4 4 0 0 0 4-4v-5h-5z"></path><path d="m70.64 6.63h5v5h-5z"></path><path d="m61.64 6.63h5v5h-5z"></path><path d="m52.64 6.63h5v5h-5z"></path><path d="m61.64 51.63h5v5h-5z"></path><path d="m70.64 51.63h5v5h-5z"></path><path d="m58.92 22.56v4h7.17l-25.09 25.08 2.83 2.83 25.09-25.08v7.17h4v-14z"></path></g></svg>
+            </span>
+            <strong>Drag and Drop</strong>
+            <p class="top-text">move files easier</p>
+            <p class="bottom-text">No more sifting through menus to move content from one app to another. Use your finger to easily Drag and Drop between apps.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
+
