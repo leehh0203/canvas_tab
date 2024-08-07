@@ -70,6 +70,8 @@ function ColorsTop(){
       if (item.classList.contains("left") && item.classList.contains('top')) { 
         LeftBottom.classList.remove("left");
         LeftBottom.classList.add("right");
+
+        
       }
       // 'left' 'bottom' 
       if (item.classList.contains("left") && item.classList.contains('bottom')) {
@@ -97,7 +99,7 @@ function ColorsTop(){
           setTimeout(() => {
             item.classList.remove('bottom');
             item.classList.add('top');
-          }, 400);
+          }, 100);
       }
 
     })
